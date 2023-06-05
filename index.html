@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Easybank landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container mx-auto p-6 relative bg-light">
+      <div class="flex items-center justify-between">
+        <div class="pt-2">
+          <img src="/images/logo.svg" alt="" />
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+        </div>
+        <a class="hidden md:block rounded-full bg-indigo-100 p-1"
+          >Request Invite</a
+        >
+      </div>
+    </nav>
+    <!--hero-->
+    <section id="hero" style="height: 100vh">
+      <div
+        class="container flex flex-col md:flex-row flex-col-reverse items-center mx-auto"
+      >
+        <div class="flex flex-col mt-5 mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl text-left"
+          >
+            Next generation digital banking
+          </h1>
+
+          <p class="text-left max-w-md">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+
+          <a href="" class="rounded-full bg-pink-300 w-full">Request Invite</a>
+        </div>
+
+        <div
+          class="md:w-1/2"
+          style="
+            background-image: url(/images/bg-intro-desktop.svg);
+            background-size: auto;
+            background-repeat: no-repeat;
+          "
+        >
+          <img src="/images/image-mockups.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
