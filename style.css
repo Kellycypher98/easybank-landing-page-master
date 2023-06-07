@@ -1,0 +1,26 @@
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+}
+p {
+  color: hsl(233, 8%, 62%);
+}
+
+a {
+  color: hsl(233, 8%, 62%);
+}
+
+.why {
+  background-color: hsl(220, 16%, 96%);
+}
+
+.latest-articles {
+  background-color: hsl(0, 0%, 78%) -;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+}
+footer {
+  background-color: rgb(19, 19, 60);
+  color: hsl(233, 8%, 62%);
+}
