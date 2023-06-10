@@ -8,6 +8,7 @@ p {
 
 a {
   color: hsl(233, 8%, 62%);
+  cursor: pointer;
 }
 
 .why {
@@ -23,4 +24,21 @@ a {
 footer {
   background-color: rgb(19, 19, 60);
   color: hsl(233, 8%, 62%);
+}
+.request-btn {
+  cursor: pointer;
+  color: white;
+  background: rgb(220, 230, 146);
+  background: linear-gradient(
+    90deg,
+    rgba(168, 176, 106, 0.8) 31%,
+    rgba(244, 154, 154, 0.774969362745098) 71%,
+    rgba(159, 172, 241, 0.739) 100%
+  );
+}
+.footer-logo {
+  filter: invert(10);
+}
+i {
+  font-size: larger;
 }
