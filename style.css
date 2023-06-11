@@ -42,3 +42,47 @@ footer {
 i {
   font-size: larger;
 }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger menu styles */
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  #desktop-menu {
+    display: none;
+  }
+
+  nav .request-btn {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    margin-top: 16px;
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 8px;
+  }
+}

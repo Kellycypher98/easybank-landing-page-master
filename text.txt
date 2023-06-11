@@ -3,3 +3,23 @@
  By Claire
     Robinson  About Us Contact Blog Careers
     Support Privacy Policy Request Invite © Easybank. All Rights Reserved
+
+
+<nav class="container mx-auto p-6 relative bg-light">
+      <div class="flex items-center justify-between">
+        <div class="pt-2">
+          <img src="/images/logo.svg" alt="" />
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+        </div>
+        <a
+          class="request-btn hidden md:block rounded-full bg-indigo-100 py-2 w-32 text-center"
+          >Request Invite</a
+        >
+      </div>
+    </nav>

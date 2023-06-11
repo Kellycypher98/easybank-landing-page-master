@@ -33,7 +33,7 @@
         <div class="pt-2">
           <img src="/images/logo.svg" alt="" />
         </div>
-        <div class="hidden md:flex space-x-6">
+        <div class="hidden md:flex space-x-6" id="desktop-menu">
           <a href="">Home</a>
           <a href="">About</a>
           <a href="">Contact</a>
@@ -44,6 +44,43 @@
           class="request-btn hidden md:block rounded-full bg-indigo-100 py-2 w-32 text-center"
           >Request Invite</a
         >
+        <div class="md:hidden">
+          <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+            <svg
+              class="hamburger-icon"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="bar"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+                d="M2 6h20M2 12h20M2 18h20"
+              ></path>
+            </svg>
+            <svg
+              class="close-icon hidden"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#000"
+                d="M20.7 4.7L19.3 3.3 12 10.6 4.7 3.3 3.3 4.7 10.6 12l-7.3 7.3 1.4 1.4L12 13.4l7.3 7.3 1.4-1.4L13.4 12l7.3-7.3z"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="mobile-menu absolute bg-white left-10 rounded-lg shadow-xl py-8 gap-2 shadow-slate-700 w-10/12 flex flex-col items-center top-full hidden"
+            id="mobile-menu"
+          >
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -52,19 +89,23 @@
       <div
         class="container flex flex-col md:flex-row flex-col-reverse items-center mx-auto"
       >
-        <div class="flex flex-col mt-5 mb-32 space-y-12 md:w-1/2 pl-5">
-          <h1 class="max-w-md text-4xl text-left md:text-5xl text-left">
+        <div
+          class="flex flex-col md:mt-5 my-10 md:mb-32 space-y-12 md:w-1/2 md:pl-5 px-10"
+        >
+          <h1
+            class="max-w-md text-4xl text-left md:text-5xl md:text-left text-center"
+          >
             Next generation digital banking
           </h1>
 
-          <p class="text-left max-w-md">
+          <p class="md:text-left text-center max-w-md">
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </p>
 
           <a
-            class="request-btn w-32 bg-blue-500 hover:bg-blue-700 text-white text-center rounded-full py-2 w-32"
+            class="request-btn w-32 bg-blue-500 hover:bg-blue-700 text-white md:mx-0 mx-auto text-center rounded-full py-2 w-32"
             >Request Invite</a
           >
         </div>
@@ -91,7 +132,7 @@
           <h1 class="text-2xl md:text-left text-center py-2">
             Why choose Easybank?
           </h1>
-          <p class="md:w-2/4 py-2">
+          <p class="md:w-2/4 py-2 text-center md:text-left">
             We leverage Open Banking to turn your bank account into your
             financial hub. Control your finances like never before.
           </p>
@@ -270,5 +311,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/app.js"></script>
   </body>
 </html>
